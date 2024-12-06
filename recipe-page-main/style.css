@@ -1,7 +1,7 @@
 body{
     padding-top: 20px;
-    padding-left: 439px;
-    padding-right:435px ;
+    padding-left: 416px;
+    padding-right:419px ;
     padding-bottom: 50px;
     background-color:  hsl(30, 54%, 90%);
     font-family: 'Outfit', sans-serif;
@@ -22,7 +22,7 @@ margin-right: 40px;
 margin-left: 30px;    
     margin-top: 28px;
     border-radius: 20px;
-    width: 540px;
+    width: 610px;
   }
   p{
     margin-left: 30px;
@@ -34,6 +34,8 @@ margin-left: 30px;
     background-color:hsl(330, 100%, 98%);
     margin: 20px;
     border-radius: 15px;
+    padding-bottom: 2px;
+    padding-top: 2px;
   }
   h1{
   color:  hsl(14, 45%, 36%);
