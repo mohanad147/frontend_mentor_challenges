@@ -1,160 +1,131 @@
-body{
-
-    padding-top: 20px;
-
-    padding-left: 416px;
-
-    padding-right:419px ;
-
-    padding-bottom: 50px;
-
-    background-color:  hsl(30, 54%, 90%);
-
-    font-family: 'Outfit', sans-serif;
-
+/* Define reusable variables for colors and fonts */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --font-body: 'Outfit', sans-serif;
+  --font-heading: 'Young Serif', serif;
 }
 
-.container {
-
-    background-color: white;
-
-    border-radius: 10px;
-
- /* display: flex; */
-
- justify-content: center;
-
-flex-direction: column;
-
-  }
-
-  img{
-margin-right: 40px;
-
-margin-left: 30px;    
-
-    margin-top: 28px;
-
-    border-radius: 20px;
-
-    width: 610px;
-
-  }
-
-  p{
-
-    margin-left: 30px;
-
-    margin-top: 10px;
-
-    font-size: 16px;
-
-  }
-
-  .prep{
-    
-    background-color:hsl(330, 100%, 98%);
-
-    margin: 20px;
-
-    border-radius: 15px;
-
-    padding-bottom: 2px;
-
-    padding-top: 2px;
-
-  }
-
-  h1{
-
-  color:  hsl(14, 45%, 36%);
-
-  font-family: 'Young Serif', serif;
-
-  margin-left: 30px;
-
-  }
-
-  h2{
-
-    color:hsl(14, 45%, 36%);
-
-    margin-left: 30px;
-
-  }
-
-  h3{
-
-    margin-left: 22px;
-
-  color:hsl(30, 10%, 34%);
-
-  }
-
-  strong{
-
-    color: hsl(14, 45%, 36%)
-
-  }
-
-  .number{
-
-float: right;
-
-margin-right: 240px;
-
-  }
-
-.vit{
-
-    margin-left: 20px;
-
-}
-
-ul,ol{
-
-color:hsl(14, 45%, 36%) ;
-
-}
-
-.attribution{
-
-    padding-top: 10px;
-
-}
-
-li{
-
-    margin-top: 12px;
-
-}
-
-hr{
-
-    margin-right: 20px;
-
-    margin-left: 20px;
-
-}
-@media(max-width=376px) {
-  
-  body {
-    background-color: white;
-  font-size: 16px;
-margin: 0;
-color: black;
-padding: 10px;
-}
-
-.container {
-  background-color: white;
-  justify-content: flex-start;
-  flex-direction: column;
+/* Style the body of the page */
+body {
+  padding: 20px 20px 50px;
+  background-color: var(--stone-100);
+  font-family: var(--font-body);
   margin: 0;
-font-size: 16px;
 }
 
-img {
-  width: 375px;; /* Adjust image width */
+/* Main container for the content */
+.container {
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
 }
+
+/* Style for the image */
+img {
+  margin: 20px auto;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin-left: 52px;
+}
+
+/* Heading styles */
+h1, h2 {
+  color: var(--brown-800);
+  font-family: var(--font-heading);
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+h3 {
+  margin-left: 10px;
+  color: var(--stone-600);
+  margin: 15px 0;
+}
+
+/* Paragraph text styling */
+p {
+  margin-left: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Preparation time box styling */
+.prep {
+  background-color: var(--rose-50);
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Unordered and ordered list styles */
+ul, ol {
+  color: var(--brown-800);
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Nutrition facts section styling */
+.vit {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.number strong {
+  font-size: 16px;
+  color: var(--brown-800);
+}
+
+/* Horizontal rule for separation */
+hr {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background-color: var(--stone-150);
+}
+
+/* Attribution section styling */
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: var(--stone-600);
+  text-decoration: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 375px;
+  }
+
+  body {
+    padding: 10px;
+  }
 }
