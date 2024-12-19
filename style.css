@@ -2,7 +2,7 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px ;
   margin: 60px;
-  
+  background-image: repeating-radial-gradient(    hsl(224, 24%, 70%),hsl(225, 100%, 98%) 50%);
   background-image: linear-gradient(
     hsl(224, 24%, 70%),
     hsl(225, 100%, 98%)     );
@@ -41,7 +41,7 @@ body{
     height: 6px;
     }
     
-.theAnnual{
+.theAnna{
   background-color:hsl(225, 100%, 98%);
   border: 2px hsl(225, 100%, 94%)  ;
   border-radius: 10px;
@@ -71,10 +71,8 @@ text-align:right;
   text-decoration-line: underline;
   text-decoration-color: blue;
   color: blue;
-  position: absolute;
-  z-index: 2; 
-  right: 42%;
-  top: 57.5%;
+
+
 }
 
 .music{
